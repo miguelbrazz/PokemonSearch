@@ -29,7 +29,8 @@ formulario.addEventListener('submit', function(e) {
         .then(resposta => resposta.json())
         .then(function(data){
             console.log(data)
-            html = 'Nome: ' + maiuscula(data.name) + '<br>'
+            html = 'Nome: ' + maiuscula(data.name) 
+            html = html + ' (' + data.id + ')' + '<br>'
             html = html + 'Tipo: ' + getType()
             resposta.innerHTML = html
 

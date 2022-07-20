@@ -55,7 +55,7 @@ hr {
 .imagem img {
     margin-top: 15px;
     margin-bottom: 15px;
-    width: 90%;
+    width: 80%;
 }
 
 .group-form {
@@ -72,8 +72,9 @@ hr {
      border: 1px solid #048ABF;
      font-family: Inria Sans;
      text-transform: uppercase;
-     border-radius: 10px;
      margin: 7px 0;
+     border-radius: 100px;
+     box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
 }
 
 .group-form input[type=submit] {
@@ -95,7 +96,7 @@ hr {
 }
 
 #content {
-    padding: 8px;
+    padding: 5px;
     background: #F2AE30;
     border: 1px solid #F2AE30;
     border-radius: 10px;
