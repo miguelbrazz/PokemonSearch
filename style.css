@@ -88,11 +88,11 @@ hr {
 
 #imgPokemon img {
     margin-top: 15px;
-    width: 100px;
+    width: 110px;
     border: 2px solid #F2AE30;
     border-radius: 50%;
     box-shadow: 5px 5px 5px rgba(0,0,0,0.5);
-    margin: 10px;
+    margin: 13px;
 }
 
 #content {
