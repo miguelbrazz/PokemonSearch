@@ -12,7 +12,7 @@ html, body {
 }
 
 body {
-    background: #53A7C8;
+    background: linear-gradient(to bottom, #6ab7f5, #9ecdf3);
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -41,10 +41,10 @@ hr {
     box-shadow: #014661;
     border-radius: 10px;
     padding: 20px;
-    background: #048ABF;
+    background: #339cf1;
     max-width: 450px;
     min-height: 300px;
-    box-shadow: 6px 6px 6px rgba(0,0,0,0.5);
+    box-shadow: 6px 6px 6px rgba(0,0,0,0.18);
     margin: 13px;
 }
 
@@ -113,4 +113,8 @@ hr {
 #botao {
     border-radius: 100px;
     box-shadow: 3px 3px 3px rgba(0,0,0,0.2);
+}
+
+.pokedex {
+    font-size: 18px;
 }
