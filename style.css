@@ -160,14 +160,6 @@ hr {
     font-size: 18px;
 }
 
-input:-webkit-autofill {
-    -webkit-box-shadow: 0 0 0 30px hsla(228, 9%, 10%, 1) inset;
-}
-
-input:-webkit-autofill {
-    -webkit-text-fill-color: #ffffff98 !important;
-}
-
 @media screen and (max-width: 473px) {
     #content {
         font-size: 0.9rem;
