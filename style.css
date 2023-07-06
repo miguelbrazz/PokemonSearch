@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inria+Sans:wght@300;400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
 * {
     margin: 0;
@@ -9,27 +9,29 @@
 html, body {
     width: 100%;
     height: 100%;
+    font-family: 'Poppins', sans-serif;;
 }
 
 body {
-    background: linear-gradient(to bottom, #6ab7f5, #9ecdf3);
+    background: hsla(228, 9%, 10%, 1);
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    font-family: Inria Sans;
 }
 
 h1 {
     font-size: 20px;
     text-align: center;
     color: #FFFFFF;
-    text-shadow:#014661;
-    font-weight: lighter;
+    font-weight: 280;
+    opacity: 0.32;
+    margin-bottom: 5px;
 }
 
-span {
-    color: #F2AE30;
+h1 a {
+    text-decoration: none;
+    color: #FFFFFF;
 }
 
 hr {
@@ -37,14 +39,12 @@ hr {
 }
 
 .container {
-    box-sizing: 10px solid #014661;
-    box-shadow: #014661;
     border-radius: 10px;
     padding: 20px;
-    background: #339cf1;
+    background: rgba(255, 255, 255, 0.082);
     max-width: 450px;
     min-height: 300px;
-    box-shadow: 6px 6px 6px rgba(0,0,0,0.18);
+    box-shadow: 4px 4px 4px rgba(0,0,0,0.1);
     margin: 13px;
 }
 
@@ -56,65 +56,120 @@ hr {
     margin-top: 15px;
     margin-bottom: 15px;
     width: 80%;
+    cursor: pointer;
+    transition: 0.5s;
+    opacity: 0.85;
+}
+
+.imagem img:hover{
+    transition: 0.5s;
+    transform: scale(1.01);
 }
 
 .group-form {
     padding: px 0;
+    text-align: center;
 }
 
 .group-form label {
-    color: #FFFFFF;
+    color: #ffffff98;
 }
 
-.group-form input {
+#name {
     width: 100%;
     padding: 10px;
-     border: 1px solid #048ABF;
-     font-family: Inria Sans;
-     text-transform: uppercase;
-     margin: 7px 0;
-     border-radius: 100px;
-     box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
+    border: 2px solid #ffffff21;
+    margin: 7px 0;
+    border-radius: 20px;
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.1);
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    background-color: hsla(228, 9%, 10%, 1);
+    color: #ffffff98;
+    outline: none;
+    transition: 0.3s;
+}
+
+#name:focus {
+    border: 2px solid #f2ae30b2;
+    transition: 0.3s;
 }
 
 .group-form input[type=submit] {
-    background: #F2AE30;
-    font-weight: 900;
-    font-size: 1.2rem;
-    color: #048ABF;
+    background: hsla(228, 9%, 10%, 1);
+    color: #ffffff98;
+    font-weight: 600;
+    font-size: 1.1rem;
     letter-spacing: 1px;
     cursor: pointer;
+    border: none;
+    width: 60%;
+    padding: 10px;
+    border: 2px solid #ffffff17;
+    margin-bottom: 7px;
+    border-radius: 10px;
+    font-family: 'Poppins', sans-serif;
+    outline: none;
+    box-shadow: 0px 0px 4px rgba(0,0,0,0.1);
+    transition: 0.3s;
+}
+
+.group-form input[type=submit]:hover {
+    background-color: rgb(16, 17, 20);
+    border: 2px solid #4088cc;
+    color: #4088cc;
 }
 
 #imgPokemon img {
     margin-top: 15px;
     width: 110px;
-    border: 2px solid #F2AE30;
+    border: 2px solid #4088ccad;
     border-radius: 50%;
-    box-shadow: 5px 5px 5px rgba(0,0,0,0.5);
+    box-shadow: 5px 5px 5px rgba(0,0,0,0.2);
     margin: 13px;
+    transition: 0.5s;
+}
+
+#imgPokemon img:hover {
+    transform: scale(1.02);
+    border: 2px solid #4088cc;
+    transition: 0.5s;
+
 }
 
 #content {
-    padding: 5px;
-    background: #F2AE30;
-    border: 1px solid #F2AE30;
-    border-radius: 10px;
-    font-weight: 600;
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.034);
+    font-weight: 550;
     font-size: 1.1rem;
+    margin: auto;
     text-align: center;
-    color: #048ABF;
-    font-family: Inria Sans;
-    box-shadow: 3px 3px 3px rgba(0,0,0,0.2);
-    border-radius: 100px;
-    
+    width: 60%;
+    border-radius: 10px;
+    color: #ffffff98;
+    transition: 0.5s;
+    box-shadow: 0px 0px 4px rgba(0,0,0,0.1);
 }
 
-#botao {
-    border-radius: 100px;
-    box-shadow: 3px 3px 3px rgba(0,0,0,0.2);
+#content:hover {
+    color: #f2ae30b2;
+    transition: 0.5s;
 }
 
 .pokedex {
     font-size: 18px;
 }
+
+input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0 30px hsla(228, 9%, 10%, 1) inset;
+}
+
+input:-webkit-autofill {
+    -webkit-text-fill-color: #ffffff98 !important;
+}
+
+/* @media screen and (max-width: 473px) {
+    #imgPokemon img {
+        width: 80px;
+    }
+} */

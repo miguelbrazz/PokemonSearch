@@ -29,13 +29,12 @@ formulario.addEventListener('submit', function(e) {
         .then(resposta => resposta.json())
         .then(function(data){
             console.log(data)
-            html = 'Nome: ' + maiuscula(data.name) 
-            html = html + ' (' + data.id + ')' + '<br>'
-            html = html + 'Tipo: ' + getType()
+            html = maiuscula(data.name) 
+            html = html + ' • ' + data.id + '<br>'
+            html = html + 'Type: ' + getType()
             resposta.innerHTML = html
 
-            imagem.innerHTML = "<img src='" + data.sprites.front_default +
-            "'><img src='" + data.sprites.back_default + "'><img src='" + data.sprites.front_shiny + "'>"
+            imagem.innerHTML = "<img src='" + data.sprites.front_default + "'><img src='" + data.sprites.back_default + "'>"
 
             getType()
             function getType() {
@@ -46,10 +45,10 @@ formulario.addEventListener('submit', function(e) {
 }
         })
         .catch(function(err){
-            if(err == 'SyntaxError: Unexpected token N in JSON at position 0'){
-                html = 'Pokémon ou número não encontrado 😔<br>(o nome deve ser em inglês)'
+            if(err == `SyntaxError: Unexpected token 'N', "Not Found" is not valid JSON`){
+                html = 'Pokémon not found.'
             } else{
-                html = 'Erro:' + err
+                html = err
             }
             resposta.innerHTML = html
         })        
